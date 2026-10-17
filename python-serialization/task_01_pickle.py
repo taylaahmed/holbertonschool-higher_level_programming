@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Module for a custom object that supports serialization."""
+
+
 import pickle
 
 
