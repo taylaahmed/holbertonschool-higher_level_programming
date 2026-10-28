@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""List all state objects """
+"""List all state objects"""
 import sys
 
 
@@ -16,4 +16,3 @@ if __name__ == "__main__":
     with Session(engine) as session:
         for state in session.query(State).order_by(State.id).all():
             print("{}: {}".format(state.id, state.name))
-    
