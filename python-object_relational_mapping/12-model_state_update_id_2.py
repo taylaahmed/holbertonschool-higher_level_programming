@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""insert louisiana"""
+"""updating to new mexico"""
 import sys
 
 from sqlalchemy import create_engine
