@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Prints the first State object from the database hbtn_0e_6_usa."""
+"""Prints the searched object"""
 import sys
 
 from sqlalchemy import create_engine
@@ -20,6 +20,6 @@ if __name__ == "__main__":
     if state is None:
         print("Not found")
     else:
-        print("{}".format(state.id))
+        print(state.id)
 
     session.close()
