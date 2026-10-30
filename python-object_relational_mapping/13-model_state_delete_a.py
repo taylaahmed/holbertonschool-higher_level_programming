@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""updating to new mexico"""
+"""Delete all states with 'a'"""
 import sys
 
 from sqlalchemy import create_engine
