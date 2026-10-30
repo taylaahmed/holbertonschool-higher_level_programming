@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Prints the searched object"""
+"""Prints the id of the State matching the name passed as argument."""
 import sys
 
 from sqlalchemy import create_engine
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State.id).filter(State.name == sys.argv[4]).first()
+    state = session.query(State).filter(State.name == sys.argv[4]).first()
 
     if state is None:
         print("Not found")
