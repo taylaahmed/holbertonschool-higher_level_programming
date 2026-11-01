@@ -5,6 +5,7 @@ import requests
 
 URL = "https://jsonplaceholder.typicode.com/posts"
 
+
 def fetch_and_print_posts():
     reponse = requests.get(URL)
     print("Status Code: {}".format(reponse.status_code))
@@ -13,6 +14,7 @@ def fetch_and_print_posts():
         posts = reponse.json()
         for post in posts:
             print(post["title"])
+
 
 def fetch_and_save_posts():
     reponse = requests.get(URL)
