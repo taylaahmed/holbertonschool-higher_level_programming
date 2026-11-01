@@ -19,6 +19,7 @@ def fetch_and_print_posts():
 def fetch_and_save_posts():
     reponse = requests.get(URL)
 
+    data = []
     if reponse.status_code == 200:
         posts = reponse.json()
         data = [
