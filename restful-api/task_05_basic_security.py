@@ -120,4 +120,4 @@ def handle_needs_fresh_token_error(jwt_header, jwt_payload):
 
 
 if __name__ == "__main__":
-    app.run(port=5001)
+    app.run()
