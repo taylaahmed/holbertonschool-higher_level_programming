@@ -11,7 +11,9 @@
     <main>
         <h1>Items List</h1>
 
-        {% if products %}
+        {% if error %}
+        <p>{{ error }}</p>
+        {% elif products %}
         <table>
             <thead>
                 <tr>
